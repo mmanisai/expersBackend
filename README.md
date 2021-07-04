@@ -9,7 +9,13 @@ You can clone the repo and then install the package like this:
 ```
 git clone https://github.com/mmanisai/expersBackend
 cd expersBackend
+python3 -m venv env
+source env/bin/activate
 python -m pip install -e question_generator
+pip install flask
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run -h 0.0.0.0
 ```
 
 ## Usage
